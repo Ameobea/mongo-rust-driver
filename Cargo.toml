@@ -21,7 +21,12 @@ name = "tests"
 [dependencies]
 libc = "^0.2"
 log  = "^0.3"
-bson = "^0.11"
+
+[dependencies.bson]
+git = "https://github.com/Ameobea/bson-rs"
+rev = "f86000e69b65c06065bf677ad92e23d3b38ec88b"
+features = ["unsigned_conversion"]
+version = "^0.11"
 
 [dependencies.mongoc-sys]
 path    = "mongoc-sys"
